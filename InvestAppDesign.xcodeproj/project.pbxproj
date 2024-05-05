@@ -7,9 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		201A9BFC2BE3894A0011546E /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201A9BFB2BE3894A0011546E /* Const.swift */; };
+		201A9BFE2BE3A2DE0011546E /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201A9BFD2BE3A2DE0011546E /* HomePageViewController.swift */; };
+		2038F7092BE788C4005B8CB3 /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2038F7082BE788C4005B8CB3 /* CollectionViewCell.xib */; };
+		2038F70A2BE788C4005B8CB3 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2038F7072BE788C4005B8CB3 /* CollectionViewCell.swift */; };
+		2038F70D2BE78967005B8CB3 /* PlanModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2038F70C2BE78967005B8CB3 /* PlanModel.swift */; };
+		2038F7102BE7BF0C005B8CB3 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2038F70F2BE7BF0C005B8CB3 /* TableViewCell.xib */; };
+		2038F7112BE7BF0C005B8CB3 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2038F70E2BE7BF0C005B8CB3 /* TableViewCell.swift */; };
+		2038F7132BE7BF49005B8CB3 /* InvestmentGuideModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2038F7122BE7BF49005B8CB3 /* InvestmentGuideModel.swift */; };
+		2038F7152BE7DEED005B8CB3 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2038F7142BE7DEED005B8CB3 /* TabBarViewController.swift */; };
+		2038F71A2BE7E3C9005B8CB3 /* MyAssetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2038F7192BE7E3C9005B8CB3 /* MyAssetViewController.swift */; };
 		20E09D8D2BDF7C8F00F84F93 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E09D8C2BDF7C8F00F84F93 /* AppDelegate.swift */; };
 		20E09D8F2BDF7C8F00F84F93 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E09D8E2BDF7C8F00F84F93 /* SceneDelegate.swift */; };
-		20E09D912BDF7C8F00F84F93 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E09D902BDF7C8F00F84F93 /* ViewController.swift */; };
 		20E09D942BDF7C8F00F84F93 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 20E09D932BDF7C8F00F84F93 /* Base */; };
 		20E09D972BDF7C8F00F84F93 /* InvestAppDesign.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 20E09D952BDF7C8F00F84F93 /* InvestAppDesign.xcdatamodeld */; };
 		20E09D992BDF7C9000F84F93 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20E09D982BDF7C9000F84F93 /* Assets.xcassets */; };
@@ -17,6 +26,8 @@
 		20E09DA72BDF7C9000F84F93 /* InvestAppDesignTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E09DA62BDF7C9000F84F93 /* InvestAppDesignTests.swift */; };
 		20E09DB12BDF7C9000F84F93 /* InvestAppDesignUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E09DB02BDF7C9000F84F93 /* InvestAppDesignUITests.swift */; };
 		20E09DB32BDF7C9000F84F93 /* InvestAppDesignUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E09DB22BDF7C9000F84F93 /* InvestAppDesignUITestsLaunchTests.swift */; };
+		20E09DC02BDF816000F84F93 /* SignUpPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E09DBF2BDF816000F84F93 /* SignUpPageViewController.swift */; };
+		20E09DC32BDF9A8E00F84F93 /* CreateAccountPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E09DC22BDF9A8E00F84F93 /* CreateAccountPageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,10 +48,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		201A9BFB2BE3894A0011546E /* Const.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
+		201A9BFD2BE3A2DE0011546E /* HomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
+		2038F7072BE788C4005B8CB3 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		2038F7082BE788C4005B8CB3 /* CollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
+		2038F70C2BE78967005B8CB3 /* PlanModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanModel.swift; sourceTree = "<group>"; };
+		2038F70E2BE7BF0C005B8CB3 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		2038F70F2BE7BF0C005B8CB3 /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
+		2038F7122BE7BF49005B8CB3 /* InvestmentGuideModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvestmentGuideModel.swift; sourceTree = "<group>"; };
+		2038F7142BE7DEED005B8CB3 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		2038F7192BE7E3C9005B8CB3 /* MyAssetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAssetViewController.swift; sourceTree = "<group>"; };
 		20E09D892BDF7C8F00F84F93 /* InvestAppDesign.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InvestAppDesign.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		20E09D8C2BDF7C8F00F84F93 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		20E09D8E2BDF7C8F00F84F93 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		20E09D902BDF7C8F00F84F93 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		20E09D932BDF7C8F00F84F93 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		20E09D962BDF7C8F00F84F93 /* InvestAppDesign.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = InvestAppDesign.xcdatamodel; sourceTree = "<group>"; };
 		20E09D982BDF7C9000F84F93 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -51,6 +71,8 @@
 		20E09DAC2BDF7C9000F84F93 /* InvestAppDesignUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InvestAppDesignUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		20E09DB02BDF7C9000F84F93 /* InvestAppDesignUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvestAppDesignUITests.swift; sourceTree = "<group>"; };
 		20E09DB22BDF7C9000F84F93 /* InvestAppDesignUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvestAppDesignUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		20E09DBF2BDF816000F84F93 /* SignUpPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpPageViewController.swift; sourceTree = "<group>"; };
+		20E09DC22BDF9A8E00F84F93 /* CreateAccountPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountPageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +100,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2038F7022BE787C5005B8CB3 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				2038F7072BE788C4005B8CB3 /* CollectionViewCell.swift */,
+				2038F7082BE788C4005B8CB3 /* CollectionViewCell.xib */,
+				2038F70E2BE7BF0C005B8CB3 /* TableViewCell.swift */,
+				2038F70F2BE7BF0C005B8CB3 /* TableViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		2038F70B2BE78951005B8CB3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2038F70C2BE78967005B8CB3 /* PlanModel.swift */,
+				2038F7122BE7BF49005B8CB3 /* InvestmentGuideModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2038F7162BE7E03B005B8CB3 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2038F7142BE7DEED005B8CB3 /* TabBarViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 		20E09D802BDF7C8F00F84F93 = {
 			isa = PBXGroup;
 			children = (
@@ -101,14 +151,18 @@
 		20E09D8B2BDF7C8F00F84F93 /* InvestAppDesign */ = {
 			isa = PBXGroup;
 			children = (
+				2038F7162BE7E03B005B8CB3 /* Controllers */,
+				2038F70B2BE78951005B8CB3 /* Model */,
+				2038F7022BE787C5005B8CB3 /* Cells */,
+				20E09DC12BDF816600F84F93 /* ViewControllers */,
 				20E09D8C2BDF7C8F00F84F93 /* AppDelegate.swift */,
 				20E09D8E2BDF7C8F00F84F93 /* SceneDelegate.swift */,
-				20E09D902BDF7C8F00F84F93 /* ViewController.swift */,
 				20E09D922BDF7C8F00F84F93 /* Main.storyboard */,
 				20E09D982BDF7C9000F84F93 /* Assets.xcassets */,
 				20E09D9A2BDF7C9000F84F93 /* LaunchScreen.storyboard */,
 				20E09D9D2BDF7C9000F84F93 /* Info.plist */,
 				20E09D952BDF7C8F00F84F93 /* InvestAppDesign.xcdatamodeld */,
+				201A9BFB2BE3894A0011546E /* Const.swift */,
 			);
 			path = InvestAppDesign;
 			sourceTree = "<group>";
@@ -128,6 +182,17 @@
 				20E09DB22BDF7C9000F84F93 /* InvestAppDesignUITestsLaunchTests.swift */,
 			);
 			path = InvestAppDesignUITests;
+			sourceTree = "<group>";
+		};
+		20E09DC12BDF816600F84F93 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				20E09DBF2BDF816000F84F93 /* SignUpPageViewController.swift */,
+				20E09DC22BDF9A8E00F84F93 /* CreateAccountPageViewController.swift */,
+				201A9BFD2BE3A2DE0011546E /* HomePageViewController.swift */,
+				2038F7192BE7E3C9005B8CB3 /* MyAssetViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,7 +300,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				20E09D992BDF7C9000F84F93 /* Assets.xcassets in Resources */,
+				2038F7102BE7BF0C005B8CB3 /* TableViewCell.xib in Resources */,
 				20E09D9C2BDF7C9000F84F93 /* Base in Resources */,
+				2038F7092BE788C4005B8CB3 /* CollectionViewCell.xib in Resources */,
 				20E09D942BDF7C8F00F84F93 /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -262,9 +329,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				20E09D972BDF7C8F00F84F93 /* InvestAppDesign.xcdatamodeld in Sources */,
-				20E09D912BDF7C8F00F84F93 /* ViewController.swift in Sources */,
+				201A9BFE2BE3A2DE0011546E /* HomePageViewController.swift in Sources */,
+				2038F70A2BE788C4005B8CB3 /* CollectionViewCell.swift in Sources */,
+				20E09DC32BDF9A8E00F84F93 /* CreateAccountPageViewController.swift in Sources */,
+				2038F71A2BE7E3C9005B8CB3 /* MyAssetViewController.swift in Sources */,
+				2038F7152BE7DEED005B8CB3 /* TabBarViewController.swift in Sources */,
 				20E09D8D2BDF7C8F00F84F93 /* AppDelegate.swift in Sources */,
+				2038F7132BE7BF49005B8CB3 /* InvestmentGuideModel.swift in Sources */,
+				2038F7112BE7BF0C005B8CB3 /* TableViewCell.swift in Sources */,
 				20E09D8F2BDF7C8F00F84F93 /* SceneDelegate.swift in Sources */,
+				20E09DC02BDF816000F84F93 /* SignUpPageViewController.swift in Sources */,
+				201A9BFC2BE3894A0011546E /* Const.swift in Sources */,
+				2038F70D2BE78967005B8CB3 /* PlanModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

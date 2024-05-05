@@ -9,6 +9,12 @@ import UIKit
 
 class TableViewCell: UITableViewCell {
 
+    @IBOutlet weak var title: UILabel!
+    
+    @IBOutlet weak var content: UILabel!
+    
+    @IBOutlet weak var guideImage: UIImageView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -20,4 +26,24 @@ class TableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
+    func setup (model : InvestmentGuideModel) {
+        
+        title.text = model.title
+        content.text = model.content
+        guideImage.image = model.image
+        guideImage.makeRounded()
+    }
+    
+}
+
+
+import UIKit
+
+extension UIImageView {
+    
+    func makeRounded() {
+        layer.masksToBounds = false
+        layer.cornerRadius = self.frame.height / 2
+        clipsToBounds = true
+    }
 }

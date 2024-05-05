@@ -6,3 +6,12 @@
 //
 
 import Foundation
+import UIKit
+
+struct InvestmentGuideModel {
+    
+    let title : String
+    let content : String
+    let image : UIImage
+    
+}

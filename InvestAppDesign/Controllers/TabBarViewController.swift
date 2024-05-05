@@ -19,5 +19,8 @@ class TabBarViewController: UITabBarController {
 
         leftButtonItem.tintColor = .black
         rightbuttonItem.tintColor = .black
+        
+        self.tabBar.unselectedItemTintColor = .darkGray
+        self.tabBar.tintColor = ColorConst().buttonColor
     }
 }

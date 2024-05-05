@@ -6,3 +6,13 @@
 //
 
 import Foundation
+import UIKit
+
+struct PlanModel {
+    
+    let name : String
+    let subTitle : String
+    let image: UIImage
+    let backgroundColor: UIColor
+    
+}
