@@ -36,9 +36,6 @@ class TableViewCell: UITableViewCell {
     
 }
 
-
-import UIKit
-
 extension UIImageView {
     
     func makeRounded() {

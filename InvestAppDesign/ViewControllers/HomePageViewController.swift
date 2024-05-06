@@ -9,11 +9,8 @@ import UIKit
 
 protocol HomePageViewControllerProtocol : AnyObject {
     func configurePortfolioView()
-    
     func setupSeeAllButton()
-    
     func setupInvestNowButton()
-    
 }
 
 
@@ -21,12 +18,12 @@ class HomePageViewController: UIViewController {
     
     
     let planList : [PlanModel] = [
-    PlanModel(name: "Gold", subTitle: "30% return", image: #imageLiteral(resourceName: "gold_coin_no_background"), backgroundColor: ColorConst().goldColor),
-    PlanModel(name: "Silver", subTitle: "60% return", image: #imageLiteral(resourceName: "silver_coin_no_background"),  backgroundColor: ColorConst().silverColor),
-    PlanModel(name: "Platinum", subTitle: "90% return", image: #imageLiteral(resourceName: "plat_coin_no_background"),  backgroundColor: ColorConst().platColor),
-    PlanModel(name: "Gold", subTitle: "30% return", image: #imageLiteral(resourceName: "gold_coin_no_background"), backgroundColor: ColorConst().goldColor),
-    PlanModel(name: "Silver", subTitle: "60% return", image: #imageLiteral(resourceName: "silver_coin_no_background"),  backgroundColor: ColorConst().silverColor),
-    PlanModel(name: "Platinum", subTitle: "90% return", image: #imageLiteral(resourceName: "plat_coin_no_background"),  backgroundColor: ColorConst().platColor)
+        PlanModel(name: "Gold", subTitle: "30% return", image: #imageLiteral(resourceName: "gold_coin_no_background"), backgroundColor: .goldColor),
+    PlanModel(name: "Silver", subTitle: "60% return", image: #imageLiteral(resourceName: "silver_coin_no_background"),  backgroundColor: .silverColor),
+    PlanModel(name: "Platinum", subTitle: "90% return", image: #imageLiteral(resourceName: "plat_coin_no_background"),  backgroundColor: .platColor),
+    PlanModel(name: "Gold", subTitle: "30% return", image: #imageLiteral(resourceName: "gold_coin_no_background"), backgroundColor: .goldColor),
+    PlanModel(name: "Silver", subTitle: "60% return", image: #imageLiteral(resourceName: "silver_coin_no_background"),  backgroundColor: .silverColor),
+    PlanModel(name: "Platinum", subTitle: "90% return", image: #imageLiteral(resourceName: "plat_coin_no_background"),  backgroundColor: .platColor)
     ]
     
     let guideList : [InvestmentGuideModel] = [
@@ -102,8 +99,8 @@ extension HomePageViewController : HomePageViewControllerProtocol {
     func setupInvestNowButton() {
         investButton.setTitle("Invest now", for: .normal)
         investButton.titleLabel?.font = .systemFont(ofSize: 12, weight: .semibold)
-        investButton.setTitleColor( ColorConst().buttonColor, for: .normal)
-        investButton.backgroundColor = ColorConst().buttonColor
+        investButton.setTitleColor( .buttonColor, for: .normal)
+        investButton.backgroundColor = .buttonColor
         investButton.layer.cornerRadius = 15
         investButton.clipsToBounds = true
     }
@@ -116,10 +113,10 @@ extension HomePageViewController : HomePageViewControllerProtocol {
         
         seeAllLabel.font = .systemFont(ofSize: 17, weight: .regular)
         
-        seeAllLabel.textColor  = ColorConst().seeAllColor
+        seeAllLabel.textColor  = .seeAllColor
         
         
-        seeAllArrow.tintColor = ColorConst().seeAllColor
+        seeAllArrow.tintColor = .seeAllColor
     }
     
     
@@ -129,7 +126,7 @@ extension HomePageViewController : HomePageViewControllerProtocol {
         
         let gradient = CAGradientLayer()
         
-        gradient.colors = [UIColor.red, ColorConst().portfolioGradiantRight]
+        gradient.colors = [UIColor.red, UIColor.portfolioGradiantRight]
         
         gradient.frame = portfolioView.bounds
         

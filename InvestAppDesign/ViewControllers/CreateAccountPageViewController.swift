@@ -83,7 +83,7 @@ extension CreateAccountPageViewController : CreateAccountPageViewControllerProto
         textField.placeholder = placeholderText
         textField.borderStyle = .none
         textField.keyboardType = .asciiCapable
-        textField.layer.borderColor = ColorConst().textFieldBorderColor.cgColor
+        textField.layer.borderColor = UIColor.textFieldBorderColor.cgColor
         textField.layer.borderWidth = 0.5
         textField.layer.cornerRadius = 20
     }
@@ -92,7 +92,7 @@ extension CreateAccountPageViewController : CreateAccountPageViewControllerProto
         createAccountbutton.setTitle("Create account", for: .normal)
         createAccountbutton.titleLabel?.font = .systemFont(ofSize: 17, weight: .heavy)
         createAccountbutton.setTitleColor( .white, for: .normal)
-        createAccountbutton.backgroundColor = ColorConst().buttonColor
+        createAccountbutton.backgroundColor = .buttonColor
         createAccountbutton.layer.cornerRadius = 20
         createAccountbutton.addTarget(self, action: #selector(self.createAccountButtonTapped), for: .touchUpInside)
     }
@@ -100,7 +100,7 @@ extension CreateAccountPageViewController : CreateAccountPageViewControllerProto
     func configureHaveAccountButton() {
         haveAccountButton.setTitle("Already have an account?", for: .normal)
         haveAccountButton.titleLabel?.font = .systemFont(ofSize: 17, weight: .heavy)
-        haveAccountButton.titleLabel?.textColor = ColorConst().buttonColor
+        haveAccountButton.titleLabel?.textColor = .buttonColor
         
         haveAccountButton.addTarget(self, action: #selector(self.haveAccountButtonTapped), for: .touchUpInside)
     }

@@ -6,3 +6,9 @@
 //
 
 import Foundation
+
+struct HistoryModel {
+    let title : String
+    let content : String
+    let date : String
+}

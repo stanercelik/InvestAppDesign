@@ -17,6 +17,9 @@
 		2038F7132BE7BF49005B8CB3 /* InvestmentGuideModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2038F7122BE7BF49005B8CB3 /* InvestmentGuideModel.swift */; };
 		2038F7152BE7DEED005B8CB3 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2038F7142BE7DEED005B8CB3 /* TabBarViewController.swift */; };
 		2038F71A2BE7E3C9005B8CB3 /* MyAssetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2038F7192BE7E3C9005B8CB3 /* MyAssetViewController.swift */; };
+		20D545982BE90BB900DB6F64 /* AssetTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D545962BE90BB900DB6F64 /* AssetTableViewCell.swift */; };
+		20D545992BE90BB900DB6F64 /* AssetTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 20D545972BE90BB900DB6F64 /* AssetTableViewCell.xib */; };
+		20D5459B2BE90BCD00DB6F64 /* HistoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D5459A2BE90BCD00DB6F64 /* HistoryModel.swift */; };
 		20E09D8D2BDF7C8F00F84F93 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E09D8C2BDF7C8F00F84F93 /* AppDelegate.swift */; };
 		20E09D8F2BDF7C8F00F84F93 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E09D8E2BDF7C8F00F84F93 /* SceneDelegate.swift */; };
 		20E09D942BDF7C8F00F84F93 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 20E09D932BDF7C8F00F84F93 /* Base */; };
@@ -58,6 +61,9 @@
 		2038F7122BE7BF49005B8CB3 /* InvestmentGuideModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvestmentGuideModel.swift; sourceTree = "<group>"; };
 		2038F7142BE7DEED005B8CB3 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		2038F7192BE7E3C9005B8CB3 /* MyAssetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAssetViewController.swift; sourceTree = "<group>"; };
+		20D545962BE90BB900DB6F64 /* AssetTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetTableViewCell.swift; sourceTree = "<group>"; };
+		20D545972BE90BB900DB6F64 /* AssetTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AssetTableViewCell.xib; sourceTree = "<group>"; };
+		20D5459A2BE90BCD00DB6F64 /* HistoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryModel.swift; sourceTree = "<group>"; };
 		20E09D892BDF7C8F00F84F93 /* InvestAppDesign.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InvestAppDesign.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		20E09D8C2BDF7C8F00F84F93 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		20E09D8E2BDF7C8F00F84F93 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -107,6 +113,8 @@
 				2038F7082BE788C4005B8CB3 /* CollectionViewCell.xib */,
 				2038F70E2BE7BF0C005B8CB3 /* TableViewCell.swift */,
 				2038F70F2BE7BF0C005B8CB3 /* TableViewCell.xib */,
+				20D545962BE90BB900DB6F64 /* AssetTableViewCell.swift */,
+				20D545972BE90BB900DB6F64 /* AssetTableViewCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -116,6 +124,7 @@
 			children = (
 				2038F70C2BE78967005B8CB3 /* PlanModel.swift */,
 				2038F7122BE7BF49005B8CB3 /* InvestmentGuideModel.swift */,
+				20D5459A2BE90BCD00DB6F64 /* HistoryModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -301,6 +310,7 @@
 			files = (
 				20E09D992BDF7C9000F84F93 /* Assets.xcassets in Resources */,
 				2038F7102BE7BF0C005B8CB3 /* TableViewCell.xib in Resources */,
+				20D545992BE90BB900DB6F64 /* AssetTableViewCell.xib in Resources */,
 				20E09D9C2BDF7C9000F84F93 /* Base in Resources */,
 				2038F7092BE788C4005B8CB3 /* CollectionViewCell.xib in Resources */,
 				20E09D942BDF7C8F00F84F93 /* Base in Resources */,
@@ -328,6 +338,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20D545982BE90BB900DB6F64 /* AssetTableViewCell.swift in Sources */,
 				20E09D972BDF7C8F00F84F93 /* InvestAppDesign.xcdatamodeld in Sources */,
 				201A9BFE2BE3A2DE0011546E /* HomePageViewController.swift in Sources */,
 				2038F70A2BE788C4005B8CB3 /* CollectionViewCell.swift in Sources */,
@@ -338,6 +349,7 @@
 				2038F7132BE7BF49005B8CB3 /* InvestmentGuideModel.swift in Sources */,
 				2038F7112BE7BF0C005B8CB3 /* TableViewCell.swift in Sources */,
 				20E09D8F2BDF7C8F00F84F93 /* SceneDelegate.swift in Sources */,
+				20D5459B2BE90BCD00DB6F64 /* HistoryModel.swift in Sources */,
 				20E09DC02BDF816000F84F93 /* SignUpPageViewController.swift in Sources */,
 				201A9BFC2BE3894A0011546E /* Const.swift in Sources */,
 				2038F70D2BE78967005B8CB3 /* PlanModel.swift in Sources */,
