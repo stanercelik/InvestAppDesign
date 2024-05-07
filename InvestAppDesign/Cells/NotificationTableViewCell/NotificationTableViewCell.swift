@@ -8,16 +8,35 @@
 import UIKit
 
 class NotificationTableViewCell: UITableViewCell {
-
+    
+    @IBOutlet weak var notifImage: UIImageView!
+    
+    @IBOutlet weak var notifTitle: UILabel!
+    
+    @IBOutlet weak var notifTimeLabel: UILabel!
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        
+        
+        
+        notifTitle.textAlignment = .left
+        notifTitle.numberOfLines = 0
+        notifImage.layer.cornerRadius = 20
+        
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+    }
+    
+    
+    func setup(model : NotificationModel) {
+        
+        notifImage.image = model.image
+        notifTitle.text = model.title
+        notifTimeLabel.text = model.time
     }
     
 }

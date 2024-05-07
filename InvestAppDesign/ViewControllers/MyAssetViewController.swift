@@ -43,6 +43,8 @@ class MyAssetViewController: UIViewController {
         historyTableView.dataSource = self
         historyTableView.delegate = self
         
+        historyTableView.showsVerticalScrollIndicator = false
+        
         historyTableView.register(UINib(nibName: "AssetTableViewCell", bundle: nil), forCellReuseIdentifier: "AssetTableViewCell")
         
         

@@ -34,6 +34,8 @@ class ProfileViewController: UIViewController {
     
     @IBOutlet weak var fifthButtonView: AccountButtonView!
     
+    @IBOutlet weak var nameLable: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -67,7 +69,11 @@ extension ProfileViewController: ConfigureProfileViewProtocol {
         
         let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(handleTap(_:)))
         
+        let bankAccountTapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(handleBankAccountTap(_:)))
+        
         firstButtonView.addGestureRecognizer(tapGestureRecognizer)
+        
+        fourthButtonView.addGestureRecognizer(bankAccountTapGestureRecognizer)
         
         secondButtonView.setup(model: buttons[1])
         thirdButtonView.setup(model: buttons[2])
@@ -78,7 +84,19 @@ extension ProfileViewController: ConfigureProfileViewProtocol {
     @objc func handleTap(_ gestureRecognizer: UITapGestureRecognizer) {
         
         let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-        let vc = storyBoard.instantiateViewController(withIdentifier: "contactInfoVC") as UIViewController
+        let vc = storyBoard.instantiateViewController(withIdentifier: "contactInfoVC") as! ContactInfoViewController
+        
+        vc.delegate = self
+        
+        vc.modalPresentationStyle = .fullScreen
+        navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    @objc func handleBankAccountTap(_ gestureRecognizer: UITapGestureRecognizer) {
+        
+        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyBoard.instantiateViewController(withIdentifier: "bankAccountVC") as! BankAccountViewController
+        
         vc.modalPresentationStyle = .fullScreen
         navigationController?.pushViewController(vc, animated: true)
     }
@@ -88,3 +106,12 @@ extension ProfileViewController: ConfigureProfileViewProtocol {
     }
 }
 
+
+
+extension ProfileViewController : ChangeNameDelegate {
+    func didChangeName(name: String) {
+        nameLable.text = name
+    }
+    
+    
+}

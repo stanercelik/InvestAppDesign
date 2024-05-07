@@ -6,3 +6,10 @@
 //
 
 import Foundation
+import UIKit
+
+struct NotificationModel {
+    let image : UIImage
+    let title : String
+    let time : String
+}

@@ -48,6 +48,7 @@ class HomePageViewController: UIViewController {
     
     @IBOutlet weak var portfolioBudget: UILabel!
     
+    @IBOutlet weak var welcomeLabel: UILabel!
     
     @IBAction func investNowButtonClicked(_ sender: Any) {
         print("Invest Now!!!")
@@ -62,6 +63,10 @@ class HomePageViewController: UIViewController {
         
         investmentGuideTableView.dataSource = self
         investmentGuideTableView.delegate = self
+        
+        investmentGuideTableView.showsVerticalScrollIndicator = false
+        
+        plansCollectionView.showsHorizontalScrollIndicator = false
         
         plansCollectionView.register(UINib(nibName: "CollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "CollectionViewCell")
         
@@ -87,7 +92,10 @@ class HomePageViewController: UIViewController {
         plansCollectionView.collectionViewLayout = layout
         
         
+        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyBoard.instantiateViewController(withIdentifier: "contactInfoVC") as! ContactInfoViewController
         
+        vc.delegate = self
         
     }
 }
@@ -187,9 +195,13 @@ extension HomePageViewController : UITableViewDataSource, UITableViewDelegate {
         
         
     }
-    
-    
-    
+}
+
+
+extension HomePageViewController : ChangeNameDelegate {
+    func didChangeName(name: String) {
+        welcomeLabel.text = "Welcome, \(name)"
+    }
     
     
 }

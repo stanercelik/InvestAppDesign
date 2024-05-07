@@ -18,6 +18,14 @@
 		2038F7152BE7DEED005B8CB3 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2038F7142BE7DEED005B8CB3 /* TabBarViewController.swift */; };
 		2038F71A2BE7E3C9005B8CB3 /* MyAssetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2038F7192BE7E3C9005B8CB3 /* MyAssetViewController.swift */; };
 		20833E712BEA60A3002B8B97 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20833E702BEA60A3002B8B97 /* CustomTextField.swift */; };
+		20833E752BEAC5DB002B8B97 /* NotificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20833E742BEAC5DB002B8B97 /* NotificationsViewController.swift */; };
+		20833E772BEAC6AF002B8B97 /* NotificationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20833E762BEAC6AF002B8B97 /* NotificationModel.swift */; };
+		20833E7E2BEAC788002B8B97 /* NotificationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20833E7C2BEAC788002B8B97 /* NotificationTableViewCell.swift */; };
+		20833E7F2BEAC788002B8B97 /* NotificationTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 20833E7D2BEAC788002B8B97 /* NotificationTableViewCell.xib */; };
+		20833E812BEAD4BD002B8B97 /* BankAccountModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20833E802BEAD4BD002B8B97 /* BankAccountModel.swift */; };
+		20833E852BEAD513002B8B97 /* BankAccountTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20833E832BEAD513002B8B97 /* BankAccountTableViewCell.swift */; };
+		20833E862BEAD513002B8B97 /* BankAccountTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 20833E842BEAD513002B8B97 /* BankAccountTableViewCell.xib */; };
+		20833E882BEADB53002B8B97 /* BankAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20833E872BEADB53002B8B97 /* BankAccountViewController.swift */; };
 		209864202BE9889C007D1DDD /* AccountButtonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2098641F2BE9889C007D1DDD /* AccountButtonModel.swift */; };
 		209864222BE989FA007D1DDD /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209864212BE989FA007D1DDD /* ProfileViewController.swift */; };
 		2098642A2BEA4E1D007D1DDD /* ContactInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209864292BEA4E1D007D1DDD /* ContactInfoViewController.swift */; };
@@ -67,6 +75,14 @@
 		2038F7142BE7DEED005B8CB3 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		2038F7192BE7E3C9005B8CB3 /* MyAssetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAssetViewController.swift; sourceTree = "<group>"; };
 		20833E702BEA60A3002B8B97 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		20833E742BEAC5DB002B8B97 /* NotificationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsViewController.swift; sourceTree = "<group>"; };
+		20833E762BEAC6AF002B8B97 /* NotificationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationModel.swift; sourceTree = "<group>"; };
+		20833E7C2BEAC788002B8B97 /* NotificationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationTableViewCell.swift; sourceTree = "<group>"; };
+		20833E7D2BEAC788002B8B97 /* NotificationTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NotificationTableViewCell.xib; sourceTree = "<group>"; };
+		20833E802BEAD4BD002B8B97 /* BankAccountModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankAccountModel.swift; sourceTree = "<group>"; };
+		20833E832BEAD513002B8B97 /* BankAccountTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankAccountTableViewCell.swift; sourceTree = "<group>"; };
+		20833E842BEAD513002B8B97 /* BankAccountTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BankAccountTableViewCell.xib; sourceTree = "<group>"; };
+		20833E872BEADB53002B8B97 /* BankAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankAccountViewController.swift; sourceTree = "<group>"; };
 		2098641F2BE9889C007D1DDD /* AccountButtonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountButtonModel.swift; sourceTree = "<group>"; };
 		209864212BE989FA007D1DDD /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		209864292BEA4E1D007D1DDD /* ContactInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactInfoViewController.swift; sourceTree = "<group>"; };
@@ -119,12 +135,11 @@
 		2038F7022BE787C5005B8CB3 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				2038F7072BE788C4005B8CB3 /* CollectionViewCell.swift */,
-				2038F7082BE788C4005B8CB3 /* CollectionViewCell.xib */,
-				2038F70E2BE7BF0C005B8CB3 /* TableViewCell.swift */,
-				2038F70F2BE7BF0C005B8CB3 /* TableViewCell.xib */,
-				20D545962BE90BB900DB6F64 /* AssetTableViewCell.swift */,
-				20D545972BE90BB900DB6F64 /* AssetTableViewCell.xib */,
+				20833E822BEAD4F3002B8B97 /* BankAccountTVCell */,
+				20833E7B2BEAC76A002B8B97 /* NotificationTableViewCell */,
+				20833E7A2BEAC75E002B8B97 /* AssetTableViewCell */,
+				20833E792BEAC750002B8B97 /* TableViewCell */,
+				20833E782BEAC739002B8B97 /* CollectionViewCell */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -136,6 +151,8 @@
 				2038F7122BE7BF49005B8CB3 /* InvestmentGuideModel.swift */,
 				20D5459A2BE90BCD00DB6F64 /* HistoryModel.swift */,
 				2098641F2BE9889C007D1DDD /* AccountButtonModel.swift */,
+				20833E762BEAC6AF002B8B97 /* NotificationModel.swift */,
+				20833E802BEAD4BD002B8B97 /* BankAccountModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -146,6 +163,51 @@
 				2038F7142BE7DEED005B8CB3 /* TabBarViewController.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		20833E782BEAC739002B8B97 /* CollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				2038F7072BE788C4005B8CB3 /* CollectionViewCell.swift */,
+				2038F7082BE788C4005B8CB3 /* CollectionViewCell.xib */,
+			);
+			path = CollectionViewCell;
+			sourceTree = "<group>";
+		};
+		20833E792BEAC750002B8B97 /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				2038F70E2BE7BF0C005B8CB3 /* TableViewCell.swift */,
+				2038F70F2BE7BF0C005B8CB3 /* TableViewCell.xib */,
+			);
+			path = TableViewCell;
+			sourceTree = "<group>";
+		};
+		20833E7A2BEAC75E002B8B97 /* AssetTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				20D545962BE90BB900DB6F64 /* AssetTableViewCell.swift */,
+				20D545972BE90BB900DB6F64 /* AssetTableViewCell.xib */,
+			);
+			path = AssetTableViewCell;
+			sourceTree = "<group>";
+		};
+		20833E7B2BEAC76A002B8B97 /* NotificationTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				20833E7C2BEAC788002B8B97 /* NotificationTableViewCell.swift */,
+				20833E7D2BEAC788002B8B97 /* NotificationTableViewCell.xib */,
+			);
+			path = NotificationTableViewCell;
+			sourceTree = "<group>";
+		};
+		20833E822BEAD4F3002B8B97 /* BankAccountTVCell */ = {
+			isa = PBXGroup;
+			children = (
+				20833E832BEAD513002B8B97 /* BankAccountTableViewCell.swift */,
+				20833E842BEAD513002B8B97 /* BankAccountTableViewCell.xib */,
+			);
+			path = BankAccountTVCell;
 			sourceTree = "<group>";
 		};
 		20D5459C2BE9860E00DB6F64 /* Widgets */ = {
@@ -223,6 +285,8 @@
 				2038F7192BE7E3C9005B8CB3 /* MyAssetViewController.swift */,
 				209864212BE989FA007D1DDD /* ProfileViewController.swift */,
 				209864292BEA4E1D007D1DDD /* ContactInfoViewController.swift */,
+				20833E742BEAC5DB002B8B97 /* NotificationsViewController.swift */,
+				20833E872BEADB53002B8B97 /* BankAccountViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -332,10 +396,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				20E09D992BDF7C9000F84F93 /* Assets.xcassets in Resources */,
+				20833E862BEAD513002B8B97 /* BankAccountTableViewCell.xib in Resources */,
 				2038F7102BE7BF0C005B8CB3 /* TableViewCell.xib in Resources */,
 				20D545992BE90BB900DB6F64 /* AssetTableViewCell.xib in Resources */,
 				20E09D9C2BDF7C9000F84F93 /* Base in Resources */,
 				2038F7092BE788C4005B8CB3 /* CollectionViewCell.xib in Resources */,
+				20833E7F2BEAC788002B8B97 /* NotificationTableViewCell.xib in Resources */,
 				20E09D942BDF7C8F00F84F93 /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -370,16 +436,22 @@
 				2038F71A2BE7E3C9005B8CB3 /* MyAssetViewController.swift in Sources */,
 				209864222BE989FA007D1DDD /* ProfileViewController.swift in Sources */,
 				20D5459E2BE9862C00DB6F64 /* AccountButtonView.swift in Sources */,
+				20833E852BEAD513002B8B97 /* BankAccountTableViewCell.swift in Sources */,
 				2038F7152BE7DEED005B8CB3 /* TabBarViewController.swift in Sources */,
 				209864202BE9889C007D1DDD /* AccountButtonModel.swift in Sources */,
 				2098642A2BEA4E1D007D1DDD /* ContactInfoViewController.swift in Sources */,
+				20833E752BEAC5DB002B8B97 /* NotificationsViewController.swift in Sources */,
 				20E09D8D2BDF7C8F00F84F93 /* AppDelegate.swift in Sources */,
 				2038F7132BE7BF49005B8CB3 /* InvestmentGuideModel.swift in Sources */,
+				20833E882BEADB53002B8B97 /* BankAccountViewController.swift in Sources */,
 				2038F7112BE7BF0C005B8CB3 /* TableViewCell.swift in Sources */,
+				20833E7E2BEAC788002B8B97 /* NotificationTableViewCell.swift in Sources */,
 				20E09D8F2BDF7C8F00F84F93 /* SceneDelegate.swift in Sources */,
 				20D5459B2BE90BCD00DB6F64 /* HistoryModel.swift in Sources */,
+				20833E812BEAD4BD002B8B97 /* BankAccountModel.swift in Sources */,
 				20E09DC02BDF816000F84F93 /* SignUpPageViewController.swift in Sources */,
 				201A9BFC2BE3894A0011546E /* Const.swift in Sources */,
+				20833E772BEAC6AF002B8B97 /* NotificationModel.swift in Sources */,
 				2038F70D2BE78967005B8CB3 /* PlanModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
