@@ -6,3 +6,9 @@
 //
 
 import Foundation
+import UIKit
+
+struct AccountButtonModel {
+    let image : UIImage
+    let title : String
+}
